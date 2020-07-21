@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Weather | APPLICATION</title>
+</head>
+
+<body>
+    <aside class="sideMenu" id="asideMenu">
+        <i class="close-icon" id="closeMenuButton"></i>
+        <ul id="metrike">
+            <h4>Metric:</h4>
+            <li>
+                <a href="#" class="units active">Kelvin</a>
+            </li>
+            <li>
+                <a href="#" class="units">Celsius</a>
+            </li>
+            <li>
+                <a href="#" class="units">Fahrenheit</a>
+            </li>
+        </ul>
+    </aside>
+    <div class="backdrop-none" id="backdrop">
+    </div>
+    <main>
+        <nav id="navigation">
+            <div class="container">
+                <ul id="metrics">
+                    <li>Metric:</li>
+                    <li>
+                        <a href="#" class="units active">Kelvin</a>
+                    </li>
+                    <li>
+                        <a href="#" class="units">Celsius</a>
+                    </li>
+                    <li>
+                        <a href="#" class="units">Fahrenheit</a>
+                    </li>
+                </ul>
+                <i class="burger-icon" id="burger-icon"></i>
+                <div id="language">
+                    <select name="language" id="languageSelect">
+                        <option class="option" value="en">Engleski</option>
+                        <option class="option" value="sr">Srpski</option>
+                        <option class="option" value="fr">Francuski</option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+        <div class="jumbotron">
+            <div id="jumbotronMain">
+                <h1 id="mainH1">OPEN WEATHER</h1>
+                <h2 id="secondH2">SEARCH FOR CURRENT WEATHER DATA</h2>
+                <form id="search">
+                    <input id="searchInput" type="text" placeholder="Enter city name" name="cityName" required>
+                    <button id="searchButton" type="submit">SEARCH</button>
+                </form>
+            </div>
+        </div>
+        <section id="weatherSection">
+            <div id="weatherSection4">
+                <h2 id="todayWeatherH21">TODAY WEATHER IN FEATURED CITIES</h2>
+                <div id="cities">
+                    <div id="fourCities">
+                    </div>
+                </div>
+            </div>
+            <div id="weatherSection1" class="displayNone">
+                <h2 id="todayWeatherH2"></h2>
+                <div id="weatherCity">
+                    <div id="leftSide">
+                        <img src="" alt="" id="img-today">
+                        <div id="cityDetails">
+                            <div class="temperature">
+                                <h1 id="temperatureBig"></h1>
+                                <div class="maxMinTemp">
+                                    <h3 id="maxTemp"></h3>
+                                    <h3 id="minTemp"></h3>
+                                </div>
+                            </div>
+                            <div id="detail">
+                                <h1 id="description"></h1>
+                                <div id="PHW">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <p id="paragraphView">View in 16 day weather forecast</p>
+                    </div>
+                    <div id="threeDays">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
